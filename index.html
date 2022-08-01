@@ -1,0 +1,153 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Shashank Sundar">
+    <meta name="description" content="This page contains the available vegetables.">
+    <title>GREENKART</title>
+    <link rel="shortcut icon" href="/Task1/gklogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/Task1/style.css">
+    <script src="https://kit.fontawesome.com/1ed8eef8ec.js" crossorigin="anonymous"></script>
+    
+    </head>
+    <body>
+       
+        <main class="container">
+           <strong>
+            <main class="title1">GREEN<span class="title2">KART</span>
+            </main>
+        </strong>
+        
+        <main class="searchbox">
+            <input class="searchtext" type="search" name="" placeholder="Search for vegetables and"><a class="searchicon" href="BLANK"><i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            
+        </main>
+        
+        <main>
+            <nav>
+            <table class="tablespacing">
+                <tr>
+                    <th>
+                        <a href="BLANK" class="links">Top<br>Deals</a>
+                    </th>
+                    <th>
+                        <a href="BLANK" class="links">Flight<br>Booking</a>
+                    </th>
+                </tr>
+            </table>  
+        </nav>         
+        </main>
+        
+        <main>
+           <table class="cart">
+            <tr>
+                <th>Items:</th>
+                <td>0</td>
+                <nav>
+                <th  rowspan="2">
+                  <a href="BLANK" class="shoppingbag"><i class="fa-solid fa-bag-shopping"></i></a>
+                </nav>
+                </th>
+            </tr>
+            <tr>
+                <th>Price:</th>
+                <td>0</td>
+            </tr>
+            
+           </table>
+    
+    </main>
+</main>
+<p>
+    <div class="vegetables">
+        <div>
+            <img src="/Task1/brocolli.jpg" alt="imagebrocolli" class="images">
+            <br>
+            Brocolli - 1Kg
+            <br>
+            <strong>₹ 120</strong>
+            <br> 
+            <button onclick="brocolliClick(-1)"class="buttonsymbol">-</button>
+                <span id="totalClicks1" class="value">0</span>
+                <button onclick="brocolliClick(1)" class="buttonsymbol">+</button>
+                <br>
+                <button class="addtocart">ADD TO CART</button>
+            </div>
+        <div>
+            <img src="/Task1/cauliflower.jpg" alt="imagecauliflower" class="images">
+            <br>
+            Cauliflower - 1Kg
+            <br>
+            <strong>₹ 60</strong>
+            <br>
+            <button onclick="cauliflowerClick(-1)" class="buttonsymbol">-</button>
+                <span id="totalClicks2" class="value">0</span>
+                <button onclick="cauliflowerClick(1)" class="buttonsymbol">+</button>
+                <br>
+                <button class="addtocart">ADD TO CART</button>
+            </div>
+        <div>
+            <img src="/Task1/cucumber.jpg" alt="imagecucumber" class="images">
+            <br>
+            Cucumber - 1Kg
+            <br>
+            <strong>₹ 48</strong>
+            <br>
+            <button onclick="cucumberClick(-1)" class="buttonsymbol">-</button>
+                <span id="totalClicks3" class="value">0</span>
+                <button onclick="cucumberClick(1)" class="buttonsymbol">+</button>
+                <br>
+                <button class="addtocart">ADD TO CART</button>
+                
+            </div>
+        <div>
+            <img src="/Task1/beetroot.jpg" alt="imagebeetroot" class="images">
+            <br>
+            Beetroot - 1Kg
+            <br>
+            <strong>₹ 32</strong>
+            <br>
+            <button onclick="beetrootClick(-1)" class="buttonsymbol">-</button>
+            <span id="totalClicks4" class="value">0</span>
+            <button onclick="beetrootClick(1)" class="buttonsymbol">+</button>
+            <br>
+            <button class="addtocart">ADD TO CART</button>
+        </div>
+    </div>
+</p>
+<script>
+    function brocolliClick(click) {
+        const totalClicks1 = document.getElementById('totalClicks1');
+        const sumvalue = parseInt(totalClicks1.innerText) + click;
+        console.log(sumvalue + click);
+        totalClicks1.innerText = sumvalue;
+    }
+</script>
+<script>
+    function cauliflowerClick(click) {
+        const totalClicks2 = document.getElementById('totalClicks2');
+        const sumvalue = parseInt(totalClicks2.innerText) + click;
+        console.log(sumvalue + click);
+        totalClicks2.innerText = sumvalue;
+    }
+</script>
+<script>
+    function cucumberClick(click) {
+        const totalClicks3 = document.getElementById('totalClicks3');
+        const sumvalue = parseInt(totalClicks3.innerText) + click;
+        console.log(sumvalue + click);
+        totalClicks3.innerText = sumvalue;
+    }
+</script>
+<script>
+    function beetrootClick(click) {
+        const totalClicks4 = document.getElementById('totalClicks4');
+        const sumvalue = parseInt(totalClicks4.innerText) + click;
+        console.log(sumvalue + click);
+        totalClicks4.innerText = sumvalue;
+    }
+</script>
+
+    </body>
+</html>
